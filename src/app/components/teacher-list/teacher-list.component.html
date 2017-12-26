@@ -1,0 +1,17 @@
+<p>
+    teacher-list works!
+</p>
+
+<button (click)="toggleToDisplayTeachers()">Display Teachers</button>
+<div *ngIf=isToDisplayTeachers>
+    <h3>Teachers</h3>
+    <div *ngFor="let teacher of teachers">
+        <li>Teacher ID: {{teacher.teacherId}}</li>
+        <li>name: {{teacher.name}}</li>
+        <li>lastname: {{teacher.lastname}}</li>
+        <li>title: {{teacher.title}}</li>
+        <li>age: {{teacher.age}}</li>
+        <li>Full Time: {{teacher.isFullTime}}</li>
+        <li></li>
+    </div>
+</div>
